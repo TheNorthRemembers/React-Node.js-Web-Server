@@ -20,7 +20,7 @@ class App extends React.Component<$Props, $State> {
     return (
       <Container>
         <Grid container justify="center" spacing={2}>
-          React Server Starter Kit
+          React Node.js Web Server Starter Kit
         </Grid>
         <SearchFilters>
           <Grid container justify="center" spacing={2}>
