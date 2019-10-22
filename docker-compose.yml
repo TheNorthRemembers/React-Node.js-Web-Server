@@ -1,0 +1,21 @@
+version: "3.3"
+services:
+  postgres-ufo:
+    image: mdillon/postgis:9.6
+    ports:
+      - "5550:5432"
+    environment:
+      POSTGRES_USER: db
+      POSTGRES_PASSWORD: db
+      POSTGRES_DB: db
+      PGDATA: /data
+    volumes:
+      - ~/db/ufo/pg-ufo:/data
+
+  pgweb-portal:
+    container_name: pgweb-ufo
+    image: sosedoff/pgweb
+    ports:
+      - "8081:8081"
+    environment:
+      - DATABASE_URL=postgres://db:db@postgres-ufo:5432/db?sslmode=disable

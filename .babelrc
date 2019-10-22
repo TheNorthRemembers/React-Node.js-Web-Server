@@ -1,0 +1,32 @@
+{
+  "presets": [
+    [
+      "env",
+      {
+        "targets": {
+          "node": "current"
+        }
+      }
+    ]
+  ],
+  "plugins": [
+    "transform-flow-strip-types",
+    "transform-es2015-modules-commonjs",
+    "transform-object-rest-spread",
+    "transform-decorators-legacy",
+    "recharts"
+  ],
+  "ignore": [
+    "dev-ops/*",
+    "tests-e2e/*",
+    "server/web/public/*",
+    "node_modules/*",
+    "dist/*"
+  ],
+  "env": {
+    "development": {
+      "sourceMaps": "inline",
+      "retainLines": true
+    }
+  }
+}
