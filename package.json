@@ -39,7 +39,7 @@
     "url": "need to fill this out"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "babel-watch": "^2.0.7",
     "bluebird": "3.5.1",
     "classnames": "^2.2.5",
