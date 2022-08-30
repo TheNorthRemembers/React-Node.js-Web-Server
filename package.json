@@ -52,7 +52,7 @@
     "lodash": "^4.17.13",
     "mariner": "^1.0.2",
     "moment": "^2.20.1",
-    "moment-timezone": "^0.5.11",
+    "moment-timezone": "^0.5.35",
     "react": "^16.8.0",
     "react-dom": "^16.8.2",
     "recharts": "^1.8.5",
